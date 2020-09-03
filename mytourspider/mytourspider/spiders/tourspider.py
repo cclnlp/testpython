@@ -10,7 +10,7 @@ class TourspiderSpider(scrapy.Spider):
     #print("!"*10,f[0].strip().replace("\"",""))
     i=0
     start_urls = [f[i].strip().replace("\"","")]
-
+# sdsddddddd
     def parse(self, response):
         data = response.body
         soup = BeautifulSoup(data, "html.parser")
